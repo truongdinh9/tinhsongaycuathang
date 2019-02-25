@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="thang" placeholder="Nhap thang" >
+<button onclick="tinhsongay()">Tính số ngày</button>
+<p id="kq"></p>
+<script>
+    function tinhsongay() {
+        let x=parseFloat(thang.value);
+        switch (true) {
+            case x==1||x==3||x==5||x==7||x==8||x==12||x==10 :
+             document.getElementById("kq").innerHTML=" Tháng "+ x+" có 31 ngày"
+                break;
+            case x==2:
+                document.getElementById("kq").innerHTML=" Tháng "+ x+" có 28 ngày hoặc 29 ngày"
+                break;
+            default:
+                document.getElementById("kq").innerHTML=" Tháng "+ x+" có 30 ngày"
+
+
+        }
+        
+    }
+</script>
+</body>
+</html>
